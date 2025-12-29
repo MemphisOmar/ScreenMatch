@@ -445,14 +445,6 @@ Este proyecto está bajo licencia MIT. Ver `LICENSE` para detalles.
 
 ---
 
-## 📞 Contacto y Soporte
-
-- 📧 Email: tu-email@ejemplo.com
-- 🐙 GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- 💼 LinkedIn: [tu-perfil](https://linkedin.com)
-
----
-
 ## 🙏 Agradecimientos
 
 - Alura Cursos - Base del proyecto
