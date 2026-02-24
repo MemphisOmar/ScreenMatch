@@ -26,21 +26,23 @@ Una aplicación **full stack completa** para descubrir, buscar y gestionar serie
 Aquí puedes ver el funcionamiento de Screen Match:
 
 ### Página Principal
-<img width="1896" height="823" alt="image" src="https://github.com/user-attachments/assets/1d88de11-8c1a-4068-aba7-cbed92f09c6d" />
+<img width="1896" height="948" alt="image" src="https://github.com/user-attachments/assets/321e6f95-d159-4f10-917c-9311b917b224" />
 
 *Interfaz principal con buscador y galería de series*
 
 ### Ordenamiento por categoría
-<img width="1903" height="940" alt="image" src="https://github.com/user-attachments/assets/cc27d3bc-348c-456d-b3f0-29465364eacf" />
+<img width="1916" height="855" alt="image" src="https://github.com/user-attachments/assets/511880a2-38b7-443b-b699-b2ae1e149e2f" />
 
 *Ordena series por su categoría*
 
 ### Detalles de Serie
-<img width="1896" height="941" alt="image" src="https://github.com/user-attachments/assets/1c267bd3-702c-4768-9352-b4da82ded533" />
+<img width="1900" height="945" alt="image" src="https://github.com/user-attachments/assets/222ad56e-c9db-41e9-a469-eca4be0f34d8" />
+
 *Información completa con temporadas y episodios*
 
 ### TOP 5 EPISODIO VALUADOS
-<img width="1915" height="955" alt="image" src="https://github.com/user-attachments/assets/0d54170a-3dd5-4865-b773-ca5ace6248d0" />
+<img width="1898" height="946" alt="image" src="https://github.com/user-attachments/assets/12062454-feb4-4681-a8b3-6daaff680afe" />
+
 *Ordena los episodios mejor valuados de cada serie*
 
 ---
