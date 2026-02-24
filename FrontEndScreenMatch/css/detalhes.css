@@ -1,65 +1,233 @@
-body {
-    background-size: cover;
-    background-image: linear-gradient(180.61deg,
-            #000000e3 25.16%,
-            #04254fc4 80%,
-            #409ecdcb 100%);
-    padding: 5em;
-    height: 100%;
-    min-height: 100vh;
-    /* Define la altura como 100vh para ocupar toda la pantalla */
+/* ===== HEADER DETALLES ===== */
+.header--details {
+    border-bottom: 2px solid rgba(0, 212, 255, 0.2);
 }
 
+.header__logo img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
 
-.ficha img {
-    margin: 0 3em 2em 0;
+.header__logo h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* ===== MAIN FICHA ===== */
+.ficha {
+    padding: 2rem 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .ficha-descripcion {
     display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    background: rgba(26, 31, 58, 0.5);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 212, 255, 0.15);
 }
 
-.ficha-descripcion div {
+.ficha-descripcion img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
+}
+
+.ficha-descripcion > div {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 1.5rem;
+}
+
+.ficha-descripcion h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ficha-descripcion p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.descricao-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ===== FICHA CONTENEDOR ===== */
+.ficha-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.ficha-temporada {
+    background: rgba(26, 31, 58, 0.5);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    height: fit-content;
+}
+
+.ficha-temporada h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.ficha-temporada .dropdown-select {
+    width: 100%;
+}
+
+/* ===== EPISODIOS ===== */
+.episodios {
+    background: rgba(26, 31, 58, 0.5);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.episodios p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
 .episodios-lista {
-    height: 25vh;
+    list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    flex-wrap: wrap;
-    list-style-type: none;
+    gap: 0.75rem;
 }
 
-h2 {
-    font-size: 48px;
+.episodios-lista li {
+    background: rgba(0, 212, 255, 0.08);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--primary-color);
+    transition: var(--transition);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-p {
-    font-size: 22px;
+.episodios-lista li:hover {
+    background: rgba(0, 212, 255, 0.12);
+    transform: translateX(8px);
 }
 
-select,
-option {
-    font-size: 24px;
-    padding: 0 1em;
-    margin-bottom: 1em;
+/* ===== RESPONSIVE - TABLET ===== */
+@media screen and (max-width: 1024px) {
+    .ficha {
+        padding: 1.5rem 1rem;
+    }
+
+    .ficha-descripcion {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .ficha-descripcion img {
+        max-width: 250px;
+    }
+
+    .ficha-descripcion h2 {
+        font-size: 2rem;
+    }
+
+    .ficha-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .ficha-temporada {
+        height: auto;
+    }
+}
+/* ===== RESPONSIVE - TABLET ===== */
+@media screen and (max-width: 768px) {
+    .header__logo h1 {
+        font-size: 0.9rem;
+    }
+
+    .header__logo img {
+        height: 30px;
+    }
 }
 
-select {
-    border-radius: 24px;
-    border: none;
-    outline: none;
-    width: 10%;
-}
+/* ===== RESPONSIVE - MÓVIL ===== */
+@media screen and (max-width: 480px) {
+    .ficha {
+        padding: 1rem 0.75rem;
+    }
 
-@media screen and (max-width: 900px) {
+    .header--details .header__container {
+        padding: 0.75rem;
+    }
 
-    .ficha-descripcion,
-    .episodios-lista {
-        display: block;
+    .header__logo h1 {
+        font-size: 0.8rem;
+    }
+
+    .header__logo img {
+        height: 28px;
+    }
+
+    .ficha-descripcion {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .ficha-descripcion img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .ficha-descripcion h2 {
+        font-size: 1.5rem;
+    }
+
+    .ficha-descripcion p {
+        font-size: 0.95rem;
+    }
+
+    .ficha-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .ficha-temporada,
+    .episodios {
+        padding: 1rem;
+    }
+
+    .ficha-temporada h3 {
+        font-size: 1.1rem;
+    }
+
+    .episodios p {
+        font-size: 1rem;
+    }
+
+    .episodios-lista li {
+        padding: 0.75rem;
+        font-size: 0.9rem;
     }
 }
